@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 300;
+}
+
+.menu {
+    padding: 20px;
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.nav-menu {
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-menu a {
+    color: black;
+    font-size: 1.3rem;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.experience {
+    display: flex;
+    height: 300px;
+    background-image: url("images/sean-pollock-PhYq704ffdA-unsplash.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.white-bar {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+}
+
+.white-bar h2, h4 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.portfoli {
+    padding-top: 50px;
+    min-height: 500px;
+    margin: auto;
+}
+
+.port-text h2, h4{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+.company span {
+    padding: 5px;
+    min-width: 240px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
