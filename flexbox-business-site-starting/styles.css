@@ -9,12 +9,34 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-weight: 600;
+    text-align: center;
+}
+
 h2 {
     font-weight: 600;
 }
 
 h4 {
     font-weight: 300;
+}
+
+h5 {
+    font-weight: 400;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+h3 {
+    margin: 0;
+    padding: 10px;
 }
 
 .menu {
@@ -111,4 +133,58 @@ h4 {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.team-con {
+    background-image: url("images/sean-pollock-PhYq704ffdA-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.team {
+    padding: 10px;
+    flex-basis: 280px;
+}
+
+.team img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    padding-top: 10px;
+}
+
+#team h2 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 5px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.contact {
+    text-align: center;
+    margin: 5px;
+    font-size: 1.8rem;
+    padding-top: 15px;
+}
+
+.contact h5 {
+    padding: 10px;
+}
+
+.copyright {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 20px;
 }
