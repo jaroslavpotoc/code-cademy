@@ -60,10 +60,3 @@ const playGame = () => {
 };
 
 playGame()
-/*
-console.log(getComputerChoice());
-console.log(getUserChoice('Paper'));
-console.log(getUserChoice('Rock'));
-console.log(getUserChoice('Scissors'));
-console.log(getUserChoice('fork'));
-*/
