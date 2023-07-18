@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="rockPaperScissors.js" type="NodeJSConfigurationType" singleton="false" path-to-node="node" nameIsGenerated="true" path-to-js-file="rockPaperScissors.js" working-dir="$PROJECT_DIR$/JAVA-SCRIPT/rock-paper-scissors">
+    <method v="2" />
+  </configuration>
+</component>
