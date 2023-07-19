@@ -25,3 +25,8 @@ const updateScore = (winner) => {
 };
 
 const advanceRound = () => currentRoundNumber++;
+
+
+/* TODO Pravdepodobne ste vypočítali vzdialenosť od odhadu počítača k cieľu a od ľudského odhadu k cieľu. Presuňte to do samostatnej getAbsoluteDistance()funkcie, ktorá vezme dve čísla a vráti vzdialenosť, a potom ju použite vo svojej compareGuesses()funkcii.
+  TODO Pridajte funkcionalitu na kontrolu, či používateľ odhaduje medzi 0 a 9 a alert()používateľ, že jeho číslo je mimo rozsahu. +Pomocou tlačidiel a nie je možné nastaviť číslo mimo tohto rozsahu =, ale používatelia to môžu urobiť zadaním priamo do vstupného poľa.
+*/
