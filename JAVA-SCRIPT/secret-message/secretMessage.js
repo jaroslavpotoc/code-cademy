@@ -1,0 +1,23 @@
+let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
+
+secretMessage.pop();
+console.log(secretMessage.length);
+console.log('\n');
+console.log(secretMessage);
+console.log('\n');
+const addArray = secretMessage.push('to', 'Program');
+console.log(secretMessage);
+console.log('\n');
+secretMessage[7] = 'right';
+console.log(secretMessage);
+console.log('\n');
+secretMessage.shift();
+console.log(secretMessage);
+console.log('\n');
+secretMessage.unshift('Programming');
+console.log(secretMessage);
+console.log('\n');
+secretMessage.splice(6, 10, 'know');
+console.log(secretMessage);
+console.log('\n');
+console.log(secretMessage.join(' '));
