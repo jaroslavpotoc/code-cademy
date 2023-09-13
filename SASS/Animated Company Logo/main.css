@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  padding-top: 5%;
+  background-color: #F1F2F3;
+}
+
+.slide-left {
+  position: relative;
+  left: 50%;
+  animation: slide-left 5s;
+  -webkit-animation: slide-left 5s;
+}
+
+h3 {
+  color: #204056;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.183em;
+  line-height: 1.4;
+  position: relative;
+  padding-top: 2%;
+  left: -6.3%;
+}
+
+/* Chrome, Safari, Opera */
+circle {
+  opacity: 1;
+}
+
+.element {
+  position: absolute;
+  top: 15%;
+  left: 46%;
+  animation-name: appear;
+  animation-duration: 4s;
+}
+
+#sass-logo {
+  width: 100px;
+  fill: white;
+}/*# sourceMappingURL=main.css.map */
