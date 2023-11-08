@@ -39,6 +39,8 @@ const batch = [
 ];
 
 // Add your functions below:
+
+// Function to validate a credit card number
 function validateCred(numArr) {
   let total = 0;
   for (let i = numArr.length - 1; i >= 0; i--) {
@@ -59,6 +61,7 @@ function validateCred(numArr) {
 console.log(validateCred(valid1)); // Should print true
 console.log(validateCred(invalid1)); // Should print false
 
+// Function to find invalid credit cards in a batch
 function findInvalidCards(cards) {
   const invalid = [];
 
@@ -80,6 +83,7 @@ console.log(
 
 console.log(findInvalidCards(batch)); // Test what the mystery numbers are
 
+// Function to identify credit card companies that issued invalid cards
 function idInvalidCardCompanies(invalidBatch) {
   const companies = [];
   for (let i = 0; i < invalidBatch.length; i++) {
@@ -111,6 +115,6 @@ function idInvalidCardCompanies(invalidBatch) {
   return companies;
 }
 
-console.log(idInvalidCardCompanies([invalid1])); // Should print['visa']
-console.log(idInvalidCardCompanies([invalid2])); // Should print ['mastercard']
+console.log(idInvalidCardCompanies([invalid1])); // Should print ['Visa']
+console.log(idInvalidCardCompanies([invalid2])); // Should print ['Mastercard']
 console.log(idInvalidCardCompanies(batch)); // Find out which companies have mailed out invalid cards
