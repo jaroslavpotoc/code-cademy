@@ -30,5 +30,5 @@ const salaryData = [
   }
   
   export {getRoles, getCompanies, getDataByRole, getDataByCompany};
-  export default salaryData;
   
+  export default salaryData;
