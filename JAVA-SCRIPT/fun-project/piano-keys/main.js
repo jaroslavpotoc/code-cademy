@@ -51,7 +51,6 @@ nextOne.onclick = () => {
 };
 
 // Write anonymous event handler property and function for the second progress button
-
 nextTwo.onclick = () => {
   nextThree.hidden = false;
   nextTwo.hidden = true;

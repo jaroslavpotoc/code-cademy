@@ -38,8 +38,6 @@ const batch = [
   mystery5,
 ];
 
-// Add your functions below:
-
 // Function to validate a credit card number
 function validateCred(numArr) {
   let total = 0;

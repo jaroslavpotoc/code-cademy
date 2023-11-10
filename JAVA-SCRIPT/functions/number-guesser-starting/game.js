@@ -1,18 +1,20 @@
+// Variable to store the target number
 let target;
 
+// DOM elements for various displays and inputs
 const humanGuessInput = document.getElementById('human-guess');
-
 const roundNumberDisplay = document.getElementById('round-number');
-
 const computerGuessDisplay = document.getElementById('computer-guess');
 const humanScoreDisplay = document.getElementById('human-score');
 const computerScoreDisplay = document.getElementById('computer-score');
 const targetNumberDisplay = document.getElementById('target-number');
 const computerWinsDisplay = document.getElementById('computer-wins');
-
 const guessButton = document.getElementById('guess');
-const nextRoundButton = document.getElementById('next-round')
+const nextRoundButton = document.getElementById('next-round');
+const addButton = document.getElementById('add');
+const subtractButton = document.getElementById('subtract');
 
+// Event listener for the "Guess" button
 guessButton.addEventListener('click', () => {
     // Generate the target value
     target = generateTarget();
@@ -40,8 +42,6 @@ guessButton.addEventListener('click', () => {
         computerWinsDisplay.innerText = 'Computer Wins!!!';
     }
 
-    // winnerDisplay.innerText = humanIsWinner ? 'You win!' : 'Computer wins!';
-
     // Display the current scores:
     humanScoreDisplay.innerText = humanScore;
     computerScoreDisplay.innerText = computerScore;
@@ -51,6 +51,7 @@ guessButton.addEventListener('click', () => {
     nextRoundButton.removeAttribute('disabled');
 });
 
+// Event listener for the "Next Round" button
 nextRoundButton.addEventListener('click', () => {
     // Increase the round number
     advanceRound();
@@ -70,9 +71,7 @@ nextRoundButton.addEventListener('click', () => {
     guessButton.classList.remove('winning-text');
 });
 
-const addButton = document.getElementById('add');
-const subtractButton = document.getElementById('subtract');
-
+// Event listeners for the "+" and "-" buttons to adjust the human guess
 addButton.addEventListener('click', () => {
     humanGuessInput.value = +humanGuessInput.value + 1;
     handleValueChange(humanGuessInput.value);
@@ -83,6 +82,7 @@ subtractButton.addEventListener('click', () => {
     handleValueChange(humanGuessInput.value);
 });
 
+// Function to handle changes in the input value
 const handleValueChange = value => {
     if (value > 0 && value <= 9) {
         subtractButton.removeAttribute('disabled');
@@ -94,6 +94,7 @@ const handleValueChange = value => {
     }
 }
 
+// Event listener for input changes in the human guess input field
 humanGuessInput.addEventListener('input', function (e) {
     handleValueChange(e.target.value);
 });

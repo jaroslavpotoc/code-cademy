@@ -1,14 +1,20 @@
+// User's name
 let userName = 'Jaro';
 
+// Greet the user with or without a username
 userName ? console.log(`Hello, ${userName}!`) : console.log('Hello!');
 
+// User's question
 const userQuestion = 'How old are you?';
 console.log(`${userQuestion} ${userName}`);
 
+// Generate a random number between 0 and 7
 let randomNumber = Math.floor(Math.random() * 8);
 
+// Initialize a variable to hold the eight ball's response
 let eightBall = '';
 
+// Use a switch statement to determine the eight ball's response based on the random number
 switch (randomNumber) {
     case 0:
         eightBall = 'It is certain';
@@ -36,4 +42,5 @@ switch (randomNumber) {
         break;
 }
 
+// Display the eight ball's response
 console.log(eightBall);
